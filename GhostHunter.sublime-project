@@ -1,0 +1,15 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+      "folder_exclude_patterns": [
+        "src/CMakeFiles",
+        "build"
+      ],
+      "file_exclude_patterns": [
+        "CMakeCache.txt"
+      ]
+		}
+	]
+}
