@@ -16,8 +16,25 @@ An experiment in creating a Game State Engine in C++
 
 ### Build
 
-The project uses cmake to generate a makefile that builds and links the executable. You can run cmake directly to provide environment specific settings for your system, otherwise, I've created linux (possible mac) compatible make commands in the root directory that will build the project (i.e. `make build` or `make build-release`)
+The project uses cmake to generate a makefile that builds and links the executable. You can run cmake directly to provide environment specific settings for your system, otherwise, I've created linux (possibly mac) compatible make commands in the root directory that will build the project (i.e. `make build` or `make build-release`)
 
 ### Running
 
 Depending on the build type, you'll find the executable in `build/<buildtype>/GhostHunter`
+
+There's also make targets to run the releases:
+
+`make run`
+`make run-release`
+
+### Clean
+
+Wipe the debug and release builds with:
+
+`make clean`
+`make clean-release`
+
+### Advanced
+By default, it will try to compile with clang, you can override this by calling cmake with `-DCMAKE_CXX_COMPILER=<C++ compiler of your choice>` set. 
+
+For example: `cmake -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCMAKE_BUILD_TYPE=Release ../../src`

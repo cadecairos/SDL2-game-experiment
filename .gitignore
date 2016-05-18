@@ -1,4 +1,7 @@
 build/debug
 build/release
 
+src/CMakeCache.txt
+src/CMakeFiles
+
 *.sublime-workspace

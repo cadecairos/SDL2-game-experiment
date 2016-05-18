@@ -1,9 +1,12 @@
-#include "SDL2/SDL_ttf.h"
 #include <string>
+
+#include "SDL2/SDL_ttf.h"
 
 enum GHGameStates {
   STATE_NULL,
   STATE_TITLE,
+  STATE_MENU,
+  STATE_CREATE_CHAR,
   STATE_MAP,
   STATE_AREA,
   STATE_BATTLE,

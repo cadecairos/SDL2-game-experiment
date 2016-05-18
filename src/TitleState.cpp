@@ -1,9 +1,9 @@
 #include "SDL2/SDL.h"
-#include "SDL2/SDL_image.h"
 #include "SDL2/SDL_ttf.h"
-#include "StateEngine.h"
+#include "SDL2/SDL_image.h"
 
-SDL_Surface *load_image(std::string filename);
+#include "StateEngine.h"
+#include "Util.h"
 
 GHTitle::GHTitle(GHStateEngine *const &engine) {
   SDL_Color textColor = {255, 255, 255};

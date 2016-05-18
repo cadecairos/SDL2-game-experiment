@@ -4,17 +4,19 @@
 #include "StateEngine.h"
 
 int main(int argc, char *args[]) {
+  // TODO: configurable?
   const int SCREEN_WIDTH = 1280;
   const int SCREEN_HEIGHT = 768;
 
+  // initialize the state engine
   GHStateEngine* stateEngine = new GHStateEngine(SCREEN_WIDTH, SCREEN_HEIGHT);
-
-  stateEngine->set_next_state(STATE_TITLE);
-  stateEngine->change_state();
-
+  
+  // Start the game loop
   stateEngine->run();
 
+  // free the memory
   delete stateEngine;
 
+  // end program
   return 0;
 }

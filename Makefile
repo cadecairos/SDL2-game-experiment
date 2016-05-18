@@ -3,13 +3,13 @@ all: build
 build: clean
 	mkdir -p build/debug
 	cd build/debug && \
-	cmake -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_BUILD_TYPE=Debug ../.. && \
+	cmake -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_BUILD_TYPE=Debug ../../src && \
 	make
 
 build-release: clean-release
 	mkdir -p build/release
 	cd build/release && \
-	cmake -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_BUILD_TYPE=Debug ../.. && \
+	cmake -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -DCMAKE_BUILD_TYPE=Release ../../src && \
 	make
 
 clean:
