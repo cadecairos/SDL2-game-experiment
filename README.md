@@ -37,4 +37,4 @@ Wipe the debug and release builds with:
 ### Advanced
 By default, it will try to compile with clang, you can override this by calling cmake with `-DCMAKE_CXX_COMPILER=<C++ compiler of your choice>` set. 
 
-For example: `cmake -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCMAKE_BUILD_TYPE=Release ../../src`
+For example: `cmake -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCMAKE_BUILD_TYPE=Release .`
