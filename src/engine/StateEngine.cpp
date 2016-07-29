@@ -19,7 +19,7 @@
 #include "SDL2/SDL_ttf.h"
 
 #include "StateEngine.h"
-#include "Timer.h"
+#include "../lib/Timer.h"
 
 const int FRAMES_PER_SECOND = 60;
 const int MAX_TICK = 1000 / FRAMES_PER_SECOND;

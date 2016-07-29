@@ -19,8 +19,8 @@
 #include "SDL2/SDL_ttf.h"
 #include "SDL2/SDL_image.h"
 
-#include "StateEngine.h"
-#include "Util.h"
+#include "../engine/StateEngine.h"
+#include "../lib/Util.h"
 
 GHTitle::GHTitle(GHStateEngine *const &engine) {
   SDL_Color textColor = {255, 255, 255};

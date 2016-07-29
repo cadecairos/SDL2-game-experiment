@@ -18,7 +18,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 
-#include "StateEngine.h"
+#include "engine/StateEngine.h"
 
 int main(int argc, char *args[]) {
   // TODO: configurable?
