@@ -1,4 +1,4 @@
-# Ghost Hunter
+# SDL2 Game Experiment - Formerly Ghost Hunter
 
 An experiment in creating a Game State Engine in C++
 
@@ -13,6 +13,7 @@ An experiment in creating a Game State Engine in C++
 * [SDL_Image 2.0](https://www.libsdl.org/projects/SDL_image/)
 * [SDL_TTF 2.0](https://www.libsdl.org/projects/SDL_ttf/)
 * [CMake](https://cmake.org/)
+* [clang](http://clang.llvm.org/)
 
 ### Build
 
